@@ -1,0 +1,13 @@
+[package]
+name = "rust-emulator"
+version = "0.1.0"
+authors = ["Danielle Brook-Roberge <danielle@brook-roberge.ca>"]
+
+[dependencies]
+virtual-cpu-core = { path = "../virtual-cpu/virtual-cpu-core" }
+virtual-cpu-8080 = { path = "../virtual-cpu/virtual-cpu-8080" }
+
+[dependencies.sdl2]
+version = "0.31.0"
+default_features = false
+features = ["gfx"]
